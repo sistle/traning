@@ -1,0 +1,35 @@
+//<BUTTONS >====================================================================================================
+.btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	-webkit-appearance: none;
+	text-align: center;
+
+	font-family: "Raleway", sans-serif;
+
+	outline: none;
+
+	line-height: 1;
+	font-weight: 700;
+	transition: all 0.3s ease;
+	padding: rem(10);
+	color: $white;
+	&--brown {
+		background-color: $brown;
+		min-width: rem(260);
+		box-shadow: 0px 20px 25px rgba(0, 0, 0, 0.05);
+		padding: rem(22) rem(10);
+		@include interactive-effects($brown, background);
+	}
+	&--slider {
+		border: 1px solid $white;
+		border-radius: 50%;
+
+	}
+
+	&[disabled] {
+		cursor: not-allowed;
+	}
+}
+//</BUTTONS>====================================================================================================

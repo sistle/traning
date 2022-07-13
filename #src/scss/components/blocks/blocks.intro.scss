@@ -1,0 +1,114 @@
+.intro {
+	background-image: url(../img/intro-bg.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	padding-top: var(--headerHeight);
+
+	text-align: center;
+	color: $white;
+
+	height: 100vh;
+	height: calc(var(--vh, 1vh) * 100);
+
+	z-index: 1;
+	position: relative;
+	&::before {
+		content: "";
+		position: absolute;
+		z-index: -1;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+
+		background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) -13.19%, rgba(0, 0, 0, 0.85) 94.01%);
+	}
+	&__container {
+		height: 100%;
+	}
+	&__inner {
+		height: 100%;
+	}
+
+	&__slider {
+		display: flex;
+		flex-direction: column;
+		min-width: 0;
+		height: 100%;
+	}
+
+	&__slide {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: rem(20);
+	}
+
+	&__title {
+		font-family: "Lato";
+		font-weight: 700;
+		font-size: rem(56);
+		line-height: 1.2;
+
+		text-transform: uppercase;
+
+		margin-bottom: rem(20);
+
+		width: 100%;
+		max-width: rem(446);
+	}
+
+	&__content {
+		width: 100%;
+		max-width: rem(537);
+		font-size: rem(18);
+		line-height: 1.5;
+		padding: 0px rem(5);
+
+		margin-bottom: rem(50);
+	}
+}
+
+.swipper-control {
+	border-top: 1px solid rgba(252, 252, 252, 0.4);
+	padding: rem(40) 0px;
+	display: flex;
+	min-width: 0;
+	justify-content: space-between;
+	align-items: center;
+	&__actions {
+		display: flex;
+		gap: rem(24);
+	}
+
+	&__btn {
+		font-size: rem(20);
+		@include interactive-effects($white, color);
+	}
+	.swiper-pagination {
+		gap: rem(20);
+	}
+	.swiper-pagination-bullet {
+		width: rem(40);
+		height: rem(40);
+		display: block;
+		border-radius: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		line-height: 1;
+		font-size: rem(16);
+		font-family: "Lato";
+		border: 1px solid $white;
+		background: transparent;
+	}
+}
+@media (max-width: $tablet) {
+	.intro {
+		&__title {
+			font-size: rem(25);
+		}
+	}
+}

@@ -1,0 +1,56 @@
+[class^="icon-"],
+[class*=" icon-"] {
+	&:before {
+		@extend %icons;
+		display: block;
+	}
+}
+
+
+.icon-gift:before {
+	content: "\e900";
+}
+
+.icon-project:before {
+	content: "\e901";
+}
+
+.icon-panel:before {
+	content: "\e902";
+}
+
+.icon-proect:before {
+	content: "\e903";
+}
+
+.icon-oven:before {
+	content: "\e904";
+}
+
+.icon-lighting:before {
+	content: "\e905";
+}
+
+.icon-furniture:before {
+	content: "\e906";
+}
+
+.icon-arrow-right:before {
+	content: "\e907";
+}
+
+.icon-arrow-left:before {
+	content: "\e908";
+}
+
+.icon-mobile:before {
+	content: "\e909";
+}
+
+.icon-fb:before {
+	content: "\e90a";
+}
+
+.icon-inst:before {
+	content: "\e90b";
+}
